@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import type { Movie } from '../../types/movie';
@@ -23,6 +23,12 @@ export default function App() {
     placeholderData: keepPreviousData,
   });
 
+  useEffect(() => {
+    if (data && data.results.length === 0 && !isLoading && !isError) {
+      toast.error('No movies found for your request.');
+    }
+  }, [data, isLoading, isError]);
+
   const handleSearchSubmit = (newQuery: string) => {
     if (newQuery === query) return;
     setQuery(newQuery);
@@ -44,10 +50,6 @@ export default function App() {
 
   const movies = data?.results || [];
   const totalPages = data?.total_pages || 0;
-
-  if (data && data.results.length === 0 && !isLoading) {
-    toast.error('No movies found for your request.');
-  }
 
   return (
     <div className={css.app}>
