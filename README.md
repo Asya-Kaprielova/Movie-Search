@@ -1,6 +1,6 @@
 # 🎬 Movie Search (Filmoteka)
 
-An interactive web application for searching movies, viewing detailed information, and managing personal lists ("Watched" and "Queue"). Built with **React**, **TypeScript**, and **REST API**, featuring a clean layout designed for an intuitive user experience.
+An interactive web application for searching movies, viewing detailed information. Built with **React**, **TypeScript**, and **REST API**, featuring a clean layout designed for an intuitive user experience.
 
 ---
 
