@@ -5,7 +5,7 @@ An interactive web application for searching movies, viewing detailed informatio
 ---
 
 ### 🚀 Demo & Repository
-* **Live Demo:** [Переглянути проєкт](https://04-react-query-zeta-livid.vercel.app/) 
+* **Live Demo:** [View project](https://04-react-query-zeta-livid.vercel.app/) 
 * **Repository:** [GitHub Source Code](https://github.com/Asya-Kaprielova/Movie-Search)
 
 ---
